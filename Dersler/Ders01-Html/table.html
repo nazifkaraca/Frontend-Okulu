@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tablo Yapısı - Formlar</title>
+</head>
+<body>
+    <!-- Tablo yapısı aşağıdaki gibi oluşturulmaktadır: -->
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+        <!-- thead tablonun sütunlarını temsil etmektedir -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <!-- tbody ise tablonun satırlarını gösterir -->
+        <tbody>
+            <tr>
+                <td>Nazif</td> 
+                <td>Karaca</td> 
+                <td>26</td> 
+            </tr>
+            <tr>
+                <td>Ali</td> 
+                <td>Demir</td> 
+                <td>35</td> 
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Form yapısı aşağıdaki gibi oluşturulmaktadır: 
+    Formlar kullanıcıdan bir bilgi almak istediğimizde kullanılır -->
+    <form action="">
+        <div>
+            <!-- id= bir elementin unique değeridir (tag)
+            type= giriş yapılan değere uygulanacak özellik
+            for= id ile ilişkilendirir, gidip Name'in üzerine tıklandığında da giriş yapabilmemize olanak sağlar-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" id="name">
+        </div>
+        <div>
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" id="surname">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <div>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+        </div>
+        <div>
+            <!-- Name'leri aynı vermeseydik iki seçeneği de seçebilecekti kullanıcı. -->
+            <label>Gender:</label>
+            <label for="woman">Woman:</label>
+            <input type="radio" id="woman" name="gender">
+            <label for="man">Man:</label>
+            <input type="radio" id="man" name="gender">
+        </div>
+        <div>
+            <!-- Checkbox -->
+            <label>Programming Languages:</label>
+            <label for="python">Python:</label>
+            <input type="checkbox" id="python" name="python">
+            <label for="csharp">C#:</label>
+            <input type="checkbox" id="csharp" name="csharp">
+        </div>
+        <input type="submit" value="Send">
+    </form>
+
+</body>
+</html>
