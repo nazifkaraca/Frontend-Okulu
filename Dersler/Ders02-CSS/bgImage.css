@@ -1,0 +1,35 @@
+/* Background image ayarlamasını bu şekilde ayarladık... */
+.bgImage {
+    background-image: url('https://picsum.photos/500/300?random=1');
+    width: 500px;
+    height: 300px;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    color: blue;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.paragraph {
+    font-size: 24px;
+}
+
+/* Responsive bir hale getiriyoruz bu şekilde. 768 pixel ve daha aşağısındaki değerlerde bu alan diğerini ezecektir. */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+
+    .bgImage {
+        width: 300px;
+        height: 150px;
+        color: brown;
+    }
+}
