@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    /* Ekran yüksekliği vh (viewport height) */
+    height: 100vh;
+    background-color: darkgray;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* DEĞİŞİM kısmı transition'da eklenmeye başlıyor. */
+    /* transition-property: background-color;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out; */
+    /* Veya burada tek bir satırda yukardakilerin hepsini uygulayabiliriz. */
+    /* transition: background-color .5s ease-in-out; */
+    /* ANİMASYON kısmı ise aşağıdaki gibi sağlanabiliyor. */
+    /* animation-name: kutucuk;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; */
+    animation: kutucuk 2s ease-in-out infinite;
+}
+
+.box:hover {
+    background-color: chartreuse;
+    /* width: 50px;
+    height: 150px; */
+}
+
+/* Aşağıda animasyon özelliklerini belirtiyoruz. Yüzdelikler süre olarak düşünülebilir. */
+@keyframes kutucuk {
+    0% {
+        transform: translateX(0px);
+        background-color: red;
+    }
+    50% {
+        transform: translateX(200px);
+        background-color: black;
+    }
+    100% {
+        transform: translateX(0px);
+        background-color: blue;
+    }
+}

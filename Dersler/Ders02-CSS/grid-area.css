@@ -1,0 +1,36 @@
+.container {
+    display: grid;
+    height: 600px;
+    background-color: darkgray;
+    gap: 5px;
+    grid-template-areas: 
+        "header header header"
+        "sidebar section section"
+        /* Aşağıdaki noktalara değer verilmeyen elemanlar dolduruluyor (box-2 ve box-3). Eğer değer verilmeyen elemanlar yoksa boşluk olarak bırakacaktı. */
+        "sidebar . ."
+        "box-1 box-1 box-1"
+}
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+    padding: 20px;
+}
+
+.section {
+    grid-area: section;
+    background-color: green;
+    padding: 20px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: red;
+    padding: 20px;
+}
+
+.box1 {
+    grid-area: footer;
+    background-color: darkblue;
+    padding: 20px;
+}
