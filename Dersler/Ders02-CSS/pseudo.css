@@ -1,0 +1,69 @@
+/* PSEUDO CLASS */
+.link {
+    color: orange;
+}
+
+.link:active {
+    color: green;
+}
+
+/* Link tıklandığında */
+.link:visited {
+    color: blue;
+}
+
+/* Mouse üzerine geldiğinde */
+.link:hover {
+    color: purple;
+}
+
+.list_item {
+    color: pink;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+/* Listenin ilk elemanını değiştirir */
+/* .list_item:first-child {
+    color: green
+} 
+.list_item:last-child {
+    color: blue;
+} */
+
+/* nth-child fonksiyon gibi değer alır ve o şekilde
+değişiklik yapar. */
+/* .list_item:nth-child(2) {
+    color: blue;
+} */
+/* .list_item:nth-child(2n-1) {
+    color: blue;
+} */
+
+/* PSEUDO ELEMENT */
+.list_item::first-letter {
+    color: brown;
+    font-size: 44px;
+}
+
+p::first-letter {
+    color: blueviolet;
+    font-size: 24px;
+}
+
+.text::first-line {
+    color: red;
+}
+
+/* Başa ve sona değiştirilemeyecek içerikler eklemek için before ve after kullanıyoruz. */
+.text::after {
+    content: "Merhaba Ben Sona Eklendim";
+    color: blue;
+    font-size: 55px;
+}
+
+.text::before {
+    content: "Merhaba Ben Başa Eklendim";
+    color: orangered;
+    font-size: 55px;
+}

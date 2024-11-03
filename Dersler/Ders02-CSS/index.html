@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Asıl CSS tanımlama head bölümünde style altında yapılmalıdır.
+    Bu sayede kod okunabilirliği ve esnekliği artacaktır. -->
+    <style>
+        /* Direkt tag'a özellik atayabiliyoruz. */
+        nav {
+            background-color: rgb(176, 7, 7);
+            color: rgb(49, 6, 236);
+        }
+
+        /* Class'a atayabiliyoruz */
+        .nav {
+            color: black;
+        }
+
+        /* Id'ye atayabiliyoruz. En ezici ID'dir, gün sonunda yazının rengi
+        beyaz olacaktır. */
+        #nav3 {
+            color: white;
+        }
+
+        .paragraf {
+            color: red;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Aşağıdaki Inline CSS, pratik olarak kullanmak pek doğru değildir. 
+    CSS ile ilgili bir şey değiştirmek istediğimizde esnek bir yapı sağlamaz. -->
+    <header class="header" style="color: rgb(255, 149, 0);font-size: 32px">Header</header>
+    <br>
+    <nav class="nav">Nav</nav>
+    <nav id="nav3">Nav</nav>
+
+    <p class="paragraf"> 
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam neque ab odit eveniet rem veritatis officiis cum. Dolor distinctio provident repellendus autem tempora voluptates, iure rem nisi sequi quasi!
+    </p>
+</body>
+</html>
