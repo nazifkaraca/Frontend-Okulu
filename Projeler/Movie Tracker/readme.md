@@ -1,4 +1,4 @@
-# Film Project
+<h1 align="center">Film Project</h1>
 
 This is a simple **Film Management App** built with **HTML**, **CSS**, and **JavaScript**. The project allows users to add, view, and manage a list of movies. Users can include details such as the film name, director, and a link to the film's poster. The interface is clean and user-friendly, ensuring a smooth experience for managing movie collections.
 
